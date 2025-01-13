@@ -1,9 +1,27 @@
 .container-header{
     display: flex;
     justify-content: center;  
+    position: relative;
     height: 100px;
 
     img {
         filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.4));
+    }
+
+    .toogle{
+        display: inline-flex;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .theme-white{
+        background-color: var(--dark-color);
+    }
+    .theme-dark{
+        background-color: var(--white-color);
     }
 }
