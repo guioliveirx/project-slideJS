@@ -1,0 +1,5 @@
+.divider {
+    margin-top: 5px;
+    height: 5px;
+    background: linear-gradient(to right, var(--red-color), var(--purple-color), var(--blue-color));
+}

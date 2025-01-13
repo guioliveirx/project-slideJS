@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-root {
+:root {
     --red-color: #EB4C52;
     --purple-color: #5C348B;
     --blue-color: #0E88C8;
@@ -34,4 +34,8 @@ body {
     max-width: 1120px;
     width: 100%;
     margin: 0 auto;
+}
+
+.rounded{
+    border-radius: 10px;
 }
