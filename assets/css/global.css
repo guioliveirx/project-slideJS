@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 :root {
@@ -18,6 +19,14 @@
 body {
     font: 300 1rem "Poppins", sans-serif;
     height: 100dvh;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .body-white {

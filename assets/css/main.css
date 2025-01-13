@@ -1,0 +1,63 @@
+#caroussel {
+    height: calc(100% - 200px);
+
+    .container-caroussel {
+        height: 100%;
+    }
+
+    .container-slider {
+        width: 80%;
+        height: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .slider {
+        width: 100%;
+        overflow: hidden;
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .slider-roll {
+        width: 100%;
+        justify-content: start;
+        white-space: nowrap;
+        transition: margin-left 0.5s ease;
+    }
+
+    .slider-roll img {
+        flex-shrink: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .pointer {
+        background-color: var(--white-color);
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        padding: 10px 15px;
+    }
+
+    .pointer ul {
+        gap: 5px;
+    }
+
+    .pointer li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--dark-color);
+        cursor: pointer;
+    }
+
+    .pointer .active {
+        background: linear-gradient(to right, var(--red-color), var(--purple-color) 70%, var(--blue-color));
+    }
+}
+
+
+@media (width <= 1120px) {
+    #caroussel .container-slider {
+        width: 100%;
+    }
+}
