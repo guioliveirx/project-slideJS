@@ -1,7 +1,37 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+root {
+    --red-color: #EB4C52;
+    --purple-color: #5C348B;
+    --blue-color: #0E88C8;
+    --white-color: #E9E9E9;
+    --dark-color: #29292E;
+}
+
+body {
+    font: 300 1rem "Poppins", sans-serif;
+    height: 100dvh;
+}
+
+.body-white {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+}
+
+.body-dark {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+.container {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
 }
