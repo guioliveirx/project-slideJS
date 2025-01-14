@@ -12,15 +12,14 @@
     <title>SlideJS</title>
 </head>
 
-<body class="body-white">
+<body id="body" class="body-white">
     <header id="header">
         <div class="container container-header">
             <img src="assets/images/slideJS-logo.png" alt="Logo do SlideJS">
-            <div class="toogle theme-white">
-                <img src="assets/Icons/moon-light.svg" alt="Icone clicável para ativar o modo escuro">
+            <div class="toogle theme-dark" data-toggle="theme" data-target="#body">
+                <img class="toggle-theme-icon" src="assets/Icons/moon-light.svg" alt="Icone clicável para ativar o modo escuro">
             </div>
         </div>
-        
     </header>
     <div class="container">
         <div class="divider rounded"></div>
@@ -56,6 +55,8 @@
             <p>© 2025 - Desenvolvido por <a href="https://guioliveirx.vercel.app/" target="_blank" rel="norrefer noopenner">Guilherme</a></p>
         </div>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

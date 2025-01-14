@@ -18,10 +18,11 @@
         cursor: pointer;
     }
 
-    .theme-white{
+    .theme-dark{
         background-color: var(--dark-color);
     }
-    .theme-dark{
+
+    .theme-white{
         background-color: var(--white-color);
     }
 }
