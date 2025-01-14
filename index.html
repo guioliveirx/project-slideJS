@@ -12,50 +12,51 @@
     <title>SlideJS</title>
 </head>
 
-<body id="body" class="body-white">
-    <header id="header">
-        <div class="container container-header">
-            <img src="assets/images/slideJS-logo.png" alt="Logo do SlideJS">
-            <div class="toogle theme-dark" data-toggle="theme" data-target="#body">
-                <img class="toggle-theme-icon" src="assets/Icons/moon-light.svg" alt="Icone clicável para ativar o modo escuro">
+<body id="body">
+    <div id="background" class="container container-background body-white rounded">
+        <header id="header">
+            <div class="container container-header">
+                <img src="assets/images/slideJS-logo.png" alt="Logo do SlideJS">
+                <div class="toogle theme-dark" data-toggle="theme" data-target="#background">
+                    <img class="toggle-theme-icon" src="assets/Icons/moon-light.svg" alt="Icone clicável para ativar o modo escuro">
+                </div>
             </div>
+        </header>
+        <div class="container">
+            <div class="divider rounded"></div>
         </div>
-    </header>
-    <div class="container">
-        <div class="divider rounded"></div>
-    </div>
-    <main id="caroussel">
-        <div class="container container-caroussel flex">
-            <div class="container-slider flex">
-                <div class="slider flex">
-                    <div class="slider-roll flex">
-                            <img src="assets/images/batman-wallpaper.webp" alt="Imagem do Batman">
-                            <img src="assets/images/blackpanter-wallpaper.webp" alt="Imagem do Pantera Negra">
-                            <img src="assets/images/deadpool-wallpaper.webp" alt="Imagem do Deadpool">
-                            <img src="assets/images/wolverine-wallpaper.webp" alt="Imagem do Wolverine">
+        <main id="caroussel">
+            <div class="container container-caroussel flex">
+                <div class="container-slider flex">
+                    <div class="slider flex">
+                        <div class="slider-roll flex">
+                                <img src="assets/images/batman-wallpaper.webp" alt="Imagem do Batman">
+                                <img src="assets/images/blackpanter-wallpaper.webp" alt="Imagem do Pantera Negra">
+                                <img src="assets/images/deadpool-wallpaper.webp" alt="Imagem do Deadpool">
+                                <img src="assets/images/wolverine-wallpaper.webp" alt="Imagem do Wolverine">
+                        </div>
+                        <div class="divider"></div>
                     </div>
-                    <div class="divider"></div>
-                </div>
-                <div class="pointer rounded">
-                    <ul class="flex">
-                        <li class="active"></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <div class="pointer rounded">
+                        <ul class="flex">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </main>
+        <div class="container">
+            <div class="divider rounded"></div>
         </div>
-    </main>
-    <div class="container">
-        <div class="divider rounded"></div>
+        <footer id="footer">
+            <div class="container container-footer flex">
+                <p>© 2025 - Desenvolvido por <a href="https://guioliveirx.vercel.app/" target="_blank" rel="norrefer noopenner">Guilherme</a></p>
+            </div>
+        </footer>
     </div>
-    <footer id="footer">
-        <div class="container container-footer flex">
-            <p>© 2025 - Desenvolvido por <a href="https://guioliveirx.vercel.app/" target="_blank" rel="norrefer noopenner">Guilherme</a></p>
-        </div>
-    </footer>
-
     <script src="assets/js/script.js"></script>
 </body>
 

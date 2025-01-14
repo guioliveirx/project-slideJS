@@ -21,6 +21,25 @@ body {
     font: 300 1rem "Poppins", sans-serif;
     height: 100dvh;
     overflow: hidden;
+    position: relative;
+    padding: 5px;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    filter: blur(8px);
+    
+    background: url("../images/marvel-background.webp") no-repeat center/cover;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.container-background {
+    height: 100%;
     padding: 10px;
 }
 

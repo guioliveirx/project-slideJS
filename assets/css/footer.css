@@ -8,11 +8,15 @@
 
     a {
         font-weight: 600;
-        letter-spacing: 0.1rem;
         background: linear-gradient(to right, var(--red-color), var(--purple-color), var(--blue-color));
         -webkit-text-fill-color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
+        transition: letter-spacing 0.5s ease;
+    }
+
+    a:hover{
+        letter-spacing: 0.1rem;
     }
 }
 
