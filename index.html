@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto de um carrossel de imagens manipulados com JavaScript">
+
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css" media="all">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <title>SlideJS</title>
 </head>
 
@@ -16,9 +22,10 @@
     <div id="background" class="container container-background body-white rounded">
         <header id="header">
             <div class="container container-header">
-                <img src="assets/images/slideJS-logo.png" alt="Logo do SlideJS">
+                <img src="assets/images/slideJS-logo.webp" alt="Logo do SlideJS" width="100" height="100">
                 <div class="toogle theme-dark" data-toggle="theme" data-target="#background">
-                    <img class="toggle-theme-icon" src="assets/Icons/moon-light.svg" alt="Icone clicável para ativar o modo escuro">
+                    <img class="toggle-theme-icon" src="assets/Icons/moon-light.svg"
+                        alt="Icone clicável para ativar o modo escuro" width="25" height="25">
                 </div>
             </div>
         </header>
@@ -30,12 +37,20 @@
                 <div class="container-slider flex">
                     <div class="slider rounded flex">
                         <div class="slider-roll flex">
-                                <img src="assets/images/blackpanter-wallpaper.webp" alt="Imagem do Pantera Negra">
-                                <img src="assets/images/deadpool-wallpaper.webp" alt="Imagem do Deadpool">
-                                <img src="assets/images/wolverine-wallpaper.webp" alt="Imagem do Wolverine">
-                                <img src="assets/images/capitamarvel-wallpaper.webp" alt="Imagem da Capitã Marvel">
-                                <img src="assets/images/deadpoolxwolverine-wallpaper.webp" alt="Imagem do Wolverine e Deadpool">
-                                <img src="assets/images/milesmorales-wallpaper.webp" alt="Imagem do Miles Morales">
+                            <img fetchpriority="high" src="assets/images/deadpool-wallpaper.webp"
+                                srcset="assets/images/deadpool-500px-wallpaper.webp 500w, assets/images/deadpool-wallpaper.webp 1000w"
+                                sizes="(max-width: 500px) 100vw, 1000px" alt="Imagem do Deadpool" width="1000px"
+                                height="563px">
+                            <img src="assets/images/wolverine-wallpaper.webp" alt="Imagem do Wolverine" loading="lazy"
+                                width="1000px" height="563px">
+                            <img src="assets/images/blackpanter-wallpaper.webp" alt="Imagem do Pantera Negra"
+                                loading="lazy" width="1000px" height="563px">
+                            <img src="assets/images/capitamarvel-wallpaper.webp" alt="Imagem da Capitã Marvel"
+                                loading="lazy" width="1000px" height="563px">
+                            <img src="assets/images/deadpoolxwolverine-wallpaper.webp"
+                                alt="Imagem do Wolverine e Deadpool" loading="lazy" width="1000px" height="563px">
+                            <img src="assets/images/milesmorales-wallpaper.webp" alt="Imagem do Miles Morales"
+                                loading="lazy" width="1000px" height="563px">
                         </div>
                         <div class="divider"></div>
                     </div>
@@ -57,11 +72,12 @@
         </div>
         <footer id="footer">
             <div class="container container-footer flex">
-                <p>© 2025 - Desenvolvido por <a href="https://guioliveirx.vercel.app/" target="_blank" rel="norrefer noopenner">Guilherme</a></p>
+                <p>© 2025 - Desenvolvido por <a href="https://guioliveirx.vercel.app/" target="_blank"
+                        rel="norrefer noopenner">Guilherme</a></p>
             </div>
         </footer>
     </div>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" defer async></script>
 </body>
 
 </html>
