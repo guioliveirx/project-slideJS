@@ -10,3 +10,19 @@ button.addEventListener('click', () => {
     button.classList.toggle('theme-white', isWhite);
     icon.src = isWhite ? 'assets/icons/sun-light.svg' : 'assets/icons/moon-light.svg';
 })
+
+let pointerSlides = document.querySelectorAll(".pointer-list .slide");
+let slideRoll = document.querySelector('.slider-roll');
+
+pointerSlides.forEach((slide, index) => {
+    slide.addEventListener('click', () => {
+        pointerSlides.forEach((slide) =>{
+            slide.classList.remove('active');
+        })
+        slide.classList.add('active');
+
+        slideRoll.style.marginLeft = `-${index * 200}%`
+
+    })
+})
+
