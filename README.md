@@ -10,7 +10,6 @@ Esta página estática foi construída em HTML, CSS e JavaScript, com o objetivo
 
 - `Manipulação de DOM`
 - `Eventos`
-- `Dark Mode`
 - `Propriedade style`
 - `Toggle e ClassList`
 
